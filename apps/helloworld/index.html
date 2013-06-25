@@ -1,0 +1,16 @@
+<!doctype html>
+<html ng-app> <!-- Inicializar la aplicacion -->
+  <head>
+    <script src="../../libs/angular.js"></script>
+  </head>
+  <body>
+    <div>
+      <label>Name:</label>
+      <!-- ng-model : Modelo a usar (yourname) -->
+      <input type="text" ng-model="yourName" placeholder="Enter a name here">
+      <hr>
+      <!-- ng-model : Imprime informacion del modelo yourname-->
+      <h1>Hello {{yourName}}!</h1>
+    </div>
+  </body>
+</html>
