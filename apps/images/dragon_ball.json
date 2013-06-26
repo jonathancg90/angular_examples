@@ -1,0 +1,22 @@
+[
+	{
+		"name":"Goku",
+		"img":"img/goku.jpg"
+	},
+	{
+		"name":"Vegeta",
+		"img":"img/vegeta.jpg"
+	},
+	{
+		"name":"Krillin",
+		"img":"img/krillin.jpg"
+	},
+	{
+		"name":"Trunks",
+		"img":"img/trunks.jpg"
+	},
+	{
+		"name":"Gohan",
+		"img":"img/gohan.jpg"
+	}
+]

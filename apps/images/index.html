@@ -1,0 +1,31 @@
+<html ng-app>
+
+<head>
+  <link href="../../libs/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+</head>
+<body ng-controller='DragonBallData'>
+<div class="container" style="margin-top:5em">  
+  <div class="row">
+    <div class="span9">
+      <h2>DRAGON BALL Z</h2>
+      <div class="row">
+        <div class="span3">Buscador2</div>
+        <div class="span6">
+
+          <ul class="nav nav-tabs nav-stacked">
+           <li class="active" ng-repeat="personaje in personajes">
+            <a href="#">
+            <img src="{{personaje.img}}" class="img-rounded">
+            {{personaje.name}}</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="../../libs/angular.js"></script>
+<script src="controller/controllers.js"></script>
+</body>
+
+</html>
