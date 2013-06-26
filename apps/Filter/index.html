@@ -1,0 +1,46 @@
+<html ng-app>
+
+<head>
+	<link href="../../libs/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+</head>
+<body ng-controller='Dataname'>
+<div class="container" style="margin-top:5em">	
+
+  <div class="control-group" >
+    <label class="control-label">Search</label>
+    <div class="controls">
+      <input type="text" ng-model="query">
+    </div>
+    <label class="control-label">Order</label>
+    <div class="controls">
+      <select ng-model="orderProp">
+	  <option value="name">Country</option>
+	  <option value="state">State</option>
+	  <option value="city">City</option>
+	</select>
+    </div>
+  </div>	
+
+	<table class="table table-striped">
+		<thead>
+			<tr>
+				<td>Pais</td>
+				<td>Departamento</td>
+				<td>Ciudad</td>
+			</tr>
+		</thead>
+		<tbody>
+			<tr ng-repeat="country in countries | filter:query |orderBy:orderProp">
+				<td>{{ country.name }}</td>
+				<td>{{ country.state }}</td>
+				<td>{{ country.city }}</td>
+			</tr>
+		</tbody>
+
+	</table>
+</div>
+<script src="../../libs/angular.js"></script>
+<script src="controller/controller.js"></script>
+</body>
+
+</html>

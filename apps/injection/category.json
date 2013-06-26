@@ -1,0 +1,154 @@
+[
+	{
+		"id": 1,
+		"name": "Agriculture"
+	},
+	{
+		"id": 173,
+		"name": "Apparel"
+	},
+	{
+		"id": 361,
+		"name": "Automobiles & Motorcycles"
+	},
+	{
+		"id": 554,
+		"name": "Beauty & Personal Care"
+	},
+	{
+		"id": 770,
+		"name": "Chemicals"
+	},
+	{
+		"id": 850,
+		"name": "Computer Hardware & Software"
+	},
+	{
+		"id": 910,
+		"name": "Construction & Real Estate"
+	},
+	{
+		"id": 1155,
+		"name": "Consumer Electronics"
+	},
+	{
+		"id": 1220,
+		"name": "Electrical Equipment & Supplies"
+	},
+	{
+		"id": 1303,
+		"name": "Electronic Components & Supplies"
+	},
+	{
+		"id": 1345,
+		"name": "Energy"
+	},
+	{
+		"id": 1377,
+		"name": "Environment"
+	},
+	{
+		"id": 1390,
+		"name": "Excess Inventory"
+	},
+	{
+		"id": 1393,
+		"name": "Fashion Accessories"
+	},
+	{
+		"id": 1472,
+		"name": "Food & Beverage"
+	},
+	{
+		"id": 1678,
+		"name": "Furniture"
+	},
+	{
+		"id": 1814,
+		"name": "Gifts & Crafts"
+	},
+	{
+		"id": 1856,
+		"name": "Hardware"
+	},
+	{
+		"id": 1876,
+		"name": "Health & Medical"
+	},
+	{
+		"id": 1920,
+		"name": "Home & Garden"
+	},
+	{
+		"id": 2190,
+		"name": "Home Appliances"
+	},
+	{
+		"id": 2357,
+		"name": "Lights & Lighting"
+	},
+	{
+		"id": 2517,
+		"name": "Luggage"
+	},
+	{
+		"id": 2570,
+		"name": "Machinery"
+	},
+	{
+		"id": 2993,
+		"name": "Measurement & Analysis Instruments"
+	},
+	{
+		"id": 3071,
+		"name": "Minerals & Metallurgy"
+	},
+	{
+		"id": 3254,
+		"name": "Office & School Supplies"
+	},
+	{
+		"id": 3414,
+		"name": "Packaging & Printing"
+	},
+	{
+		"id": 3460,
+		"name": "Rubber & Plastics"
+	},
+	{
+		"id": 3532,
+		"name": "Security & Protection"
+	},
+	{
+		"id": 3612,
+		"name": "Shoes & Accessories"
+	},
+	{
+		"id": 3661,
+		"name": "Sports & Entertainment"
+	},
+	{
+		"id": 3857,
+		"name": "Telecommunications"
+	},
+	{
+		"id": 3902,
+		"name": "Textiles & Leather Products"
+	},
+	{
+		"id": 4038,
+		"name": "Timepieces"
+	},
+	{
+		"id": 4094,
+		"name": "Tools"
+	},
+	{
+		"id": 4181,
+		"name": "Toys & Hobbies"
+	},
+	{
+		"id": 4250,
+		"name": "Transportation"
+	}
+]
