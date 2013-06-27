@@ -1,0 +1,51 @@
+<!doctype html>
+<html ng-app>
+<head>
+  <meta charset="utf-8">
+  <title>AngularJS Enabling</title>
+  <link href="../../libs/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+  <style type="text/css">
+    .disabled {
+      color: #c0c0c0;
+      background: transparent;
+    }
+  </style>
+</head>
+<body ng-init="isEnabled=true">
+  <div class="container" style="margin-top:5em">
+    <div class="control-group">
+    <label class="control-label" for="inputEmail">Option</label>
+      <div class="controls">
+        <select 
+          ng-model="isEnabled" 
+          ng-options="choice == 'Enabled' as choice for choice in ['Enabled', 'Disabled']">
+        </select>
+      </div>
+    </div>
+    <div class="control-group">
+      <label class="control-label" for="inputPassword">UserName</label>
+      <div class="controls">
+        <input 
+          ng-model="userName" 
+          ng-readonly="!isEnabled" 
+          ng-class="{ disabled: !isEnabled }">
+      </div>
+    </div>
+    <div class="control-group">
+      <label class="control-label" for="inputPassword">First Name</label>
+      <div class="controls">
+        <input 
+          ng-model="firstName" 
+          ng-readonly="!isEnabled" 
+          ng-class="{ disabled: !isEnabled }">
+      </div>
+    </div>
+    Check me to make text readonly: 
+    
+    <input type="checkbox" ng-model="checked"><br/>
+    <input type="text" ng-readonly="checked" value="I'm Angular"/>
+
+
+  <script src="../../libs/angular.js"></script>
+</body>
+</html>
