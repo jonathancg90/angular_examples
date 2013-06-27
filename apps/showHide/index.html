@@ -5,13 +5,25 @@
   </head>
   <body>
     <div class="container" style="margin-top:5em">
-      <label>Show and Hide:</label>
-      <!-- ng-model : Modelo a usar (yourname) -->
-      <input type="button" ng-model="yourName" value="aaa" class="btn">
-      <hr>
-     <input type="button" ng-model="yourName" value="aaa" class="btn">
-    </div>
-
+    	<div class="row">
+		  <div class="span9">
+		    <h2>Show and Hide:</h2>
+		    <div class="row">
+		      <div class="span4">
+		      	<p>Button</p>
+					<input type="button" ng-model="visible" value="aaa" class="btn">
+			      	<input type="button" ng-show="visible" value="aaa" class="btn">
+	     			<input type="button" ng-hide="visible" value="aaa" class="btn">
+		      </div>
+		      <div class="span4">
+		      		<input type="checkbox" ng-model="checked">CheckBox
+		      		<p>
+		      		Show: <span ng-show="checked">Curiosity</span> <br/>
+    				Hide: <span ng-hide="checked">Curiosity</span>
+		      </div>
+		    </div>
+		  </div>
+		</div>
     <script src="../../libs/angular.js"></script>
   </body>
 </html>
