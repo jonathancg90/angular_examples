@@ -1,4 +1,4 @@
-var frameworkApp = angular.module('frameworkApp',[]);
+var frameworkApp = angular.module('frameworkApp',['frameworkFilters']);
 
 
 frameworkApp.config(function ($routeProvider){
@@ -16,9 +16,9 @@ frameworkApp.config(function ($routeProvider){
 				templateUrl: 'views/list.html'
 			})
 		.when(
-			'/detail',
+			'/detail/:frameworkId',
 			{
-				controller: 'FrameworkController',
+				controller: 'FrameworkDetailController',
 				templateUrl: 'views/detail.html'
 			})
 		.otherwise({redirectTo:'/'});

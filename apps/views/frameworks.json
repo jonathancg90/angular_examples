@@ -3,24 +3,27 @@
 		"id":"1",
 		"name":"Laravel",
 		"Rating":"3",
-		"img":"3"
+		"img":[
+			"img/laravel2.jpg",
+			"img/laravel3.jpg"
+			]
 	},
 	{
 		"id":"2",
 		"name":"Django",
 		"Rating":"1",
-		"img":"3"
+		"img":["img/django.jpg"]
 	},
 	{
 		"id":"3",
 		"name":"Ruby in Rails",
 		"Rating":"2",
-		"img":"3"
+		"img":["img/rubi.jpg"]
 	},
 	{
 		"id":"4",
 		"name":"Zend",
 		"Rating":"7",
-		"img":"3"
+		"img":["img/zend.png"]
 	}
 ]

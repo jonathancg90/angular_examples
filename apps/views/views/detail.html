@@ -1,12 +1,24 @@
 
       <div class="demo-row typography-row">
-        <div class="demo-content">
-          <span class="text-note">Image</span>
-          <img src="images/exaple-image.jpg" alt="exaple-image" width="462" height="308" class="img-rounded">
-          <p class="img-comment"><strong>Note:</strong> gravida at eget metus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
-        </div><!-- /.demo-content -->
+        <div class="demo-row">
+          <div class="demo-title">
+            <dd ng-repeat="image in detail_framework.img">
+              <img src="{{image}}" width="130" height="80" ng-click="setImage(image)">
+            </dd>
+          </div>
+          <div class="demo-col" style="width:26em"> 
+            <img src="{{ mainImage }}" alt="exaple-image" width="500em" height="25em" class="img-rounded">
+          </div>
 
+        </div><!-- /.demo-content -->
+        
         <div class="demo-content">
+          <strong>{{ detail_framework.id}} ) </strong> 
+            {{ detail_framework.name }}
+          </p>
+          Puesto: {{ detail_framework.Rating | position }}
+          <p></p>
+
         <div class="demo-col">
           <a href="#/list" class="btn btn-large btn-block btn-info">Volver</a>
         </div>

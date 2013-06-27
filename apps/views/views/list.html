@@ -22,7 +22,7 @@
               <td>{{ framework.id }}</td>
               <td>{{ framework.name }}</td>
               <td>{{ framework.Rating }}</td>
-              <td><a href="#/detail"><i class="fui-check-inverted text-primary"></i></a></td>
+              <td><a href="#/detail/{{ framework.id }}" ng-click="UpdateFramework(framework)"><i class="fui-check-inverted text-primary"></i></a></td>
             </tr>
           </tbody></table>
         </div>
