@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html ng-app="myCart">
+<head>
+    <meta charset="utf-8">
+    <title>RP | Shop</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Loading Bootstrap -->
+    <link href="app/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Loading Flat UI -->
+    <link href="app/css/flat-ui.css" rel="stylesheet">
+
+    <!-- Others -->
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href="app/css/app.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="navbar navbar-inverse">
+            <div class="navbar-inner">
+                <div class="container">
+                    <button type="button"
+                            class="btn btn-navbar"
+                            data-toggle="collapse"
+                            data-target=".nav-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <div class="nav-collapse collapse">
+                        <ul class="nav">
+                            <li class="active">
+                                <a href="#">
+                                    Products
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Cart
+                                    <span class="navbar-unread">1</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div><!--/.nav-collapse -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div animated-view></div>
+
+    <script src="app/js/jquery/jquery-1.9.1.min.js"></script>
+    <script src="app/js/jquery/jquery-ui-1.10.0.custom.min.js"></script>
+    <script src="app/js/twbootstrap/bootstrap.min.js"></script>
+    <script src="app/lib/angular/angular.js"></script>
+    <script src="app/mycart.js"></script>
+    <script src="app/js/factories.js"></script>
+    <script src="app/js/services.js"></script>
+    <script src="app/js/controller.js"></script>
+    <script src="app/js/directives/animatedView.js"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<div ng-controller="ProductsController">
+    <form class="form-search">
+        <input type="text" class="input-medium search-query" ng-model="searchText">
+        <button type="submit" class="btn">Search</button>
+    </form>
+
+    <table class="table table-bordered table-striped">
+        <thead>
+        <tr>
+            <th>Manufacturer Name</th>
+            <th>Product Name</th>
+            <th>Price</th>
+            <th>MOQ</th>
+            <th>Actions</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="product in products | filter:searchText | orderBy:'moq' ">
+            <td>{{product.manufacturer_name}}</td>
+            <td>{{product.name}}</td>
+            <td>{{product.price}}</td>
+            <td>{{product.moq}}</td>
+            <td><a href="#/product/{{ product.id }}" class="btn" ng-click="updateProduct(product)">
+                <i class="fui-eye-24"></i>
+            </a></td>
+        </tr>
+        </tbody>
+    </table>
+</div>

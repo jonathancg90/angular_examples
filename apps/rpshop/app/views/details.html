@@ -1,0 +1,52 @@
+
+    <div class="view" ng-controller="DetailController">
+        <div class="container-fluid">
+            <h2>Product Detail ID: {{ product.id }}</h2>
+
+            <div class="row-fluid cool-row">
+                <div class="span3">
+                    <h5>Manufacturer</h5>
+                    <h4><strong>{{ product.manufacturer_name }}</strong></h4>
+                </div>
+
+                <div class="span3">
+                    <h5>Product Name</h5>
+                    <h4><strong>{{ product.name }}</strong></h4>
+                </div>
+
+                <div class="span3">
+                    <h5>Price</h5>
+                    <h4><strong>{{ product.price }}</strong></h4>
+                </div>
+
+                <div class="span3">
+                    <h5>MOQ</h5>
+                    <h4><strong>{{ product.moq }}</strong></h4>
+                </div>
+            </div>
+
+            <div class="row-fluid cool-row">
+                <div class="span12">
+                    <h5>Quantity</h5>
+                    <div class="row-fluid">
+                        <div class="span4">
+                            <div id="slider" class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" aria-disabled="false">
+                                <div class="ui-slider-segment"></div>
+                                <div class="ui-slider-segment"></div>
+                                <div class="ui-slider-segment"></div>
+                                <div class="ui-slider-range ui-widget-header ui-slider-range-min" style="width: 25%;"></div>
+                                <a class="ui-slider-handle ui-state-default ui-corner-all" href="#" style="left: 25%;"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row-fluid">
+                <a href="#" class="btn btn-large">
+                    <i class="fui-plus-24"></i>
+                    Add to Cart
+                </a>
+            </div>
+        </div>
+    </div>
