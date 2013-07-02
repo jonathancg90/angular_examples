@@ -1,0 +1,27 @@
+<!--<script type="text/javascript" ng:autobind src="http://code.angularjs.org/0.9.16/angular-0.9.16.js"></script>-->
+<script src="Controllers/controller.js"></script>
+
+<script type="text/javascript" ng:autobind
+src="http://code.angularjs.org/0.9.16/angular-0.9.16.js"></script>
+
+<table ng:init="invoice= {items:[{qty_s: 10, qty_m: 20, qty_l: 30, description:'gadget', cost:9.95}]}">
+    <tr><th>Qty</th><th>Description</th><th>Cost</th><th>Total</th><th></th></tr>
+    
+    <tr ng:repeat="item in invoice.items">
+        <td><input name="item.qty_s" value="1" size="4" ng:format="number" ng:required ng:validate="integer">
+            <input name="item.qty_m" value="1" size="4" ng:format="number" ng:required ng:validate="integer">
+            <input name="item.qty_l" value="1" size="4" ng:format="number" ng:required ng:validate="integer">
+        </td>
+        <td><input name="item.description"></td>
+        <td><input name="item.cost" value="0.00" ng:required ng:validate="number" size="6"></td>
+        <td>{{ (item.qty_s + item.qty_m + item.qty_l) * item.cost | currency}}</td>
+        <td>[<a href ng:click="invoice.items.$remove(item)">X</a>]</td>
+    </tr>
+    <tr>
+        <td><a href ng:click="invoice.items.$add()">add item</a></td>
+        <td></td>
+        <td>Total:</td>
+        <td>{{invoice.items.$sum('(qty_s+qty_m+qty_l)*cost') | currency}}</td>
+    </tr>
+    
+</table>
