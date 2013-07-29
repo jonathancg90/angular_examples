@@ -13,4 +13,5 @@ function PhoneListCtrl($scope) {
      	"snippet": "The Next, Next Generation tablet."
     }
   ];
+
 }
