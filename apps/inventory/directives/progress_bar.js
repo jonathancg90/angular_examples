@@ -4,8 +4,7 @@ inventoryApp.directive('progressAlmacen', [function($compile){
 		restrict: 'E',
 		link: function(scope, element, attrs) {
 			scope.updateProgress = function(element){
-				debugger;
-				var total_capacity = 10,
+				var total_capacity = 19,
 					total_product = this.almacen.length;
 				var progress = new Array();
 					progress[0] = 0; //Verde
@@ -13,6 +12,7 @@ inventoryApp.directive('progressAlmacen', [function($compile){
 					progress[2] = 0; //Rojo
 				//Green = 90% , yellow = 97%, red= 3%
 				capacity = (total_product * 100) / total_capacity;
+				$(element.children()[1]).text(capacity.toFixed(2)+' % ');
 				progress[0] = capacity;
 				if(capacity > 90) {
 					progress[0] = 90
@@ -23,7 +23,7 @@ inventoryApp.directive('progressAlmacen', [function($compile){
 				}
 				var divs = element.children().children();
 				$(divs).each(function( index, value ) {
-					$(value).attr('style','width: '+progress[index]);
+					$(value).attr('style','width: '+progress[index]+'%');
 				});
 			};
 		},

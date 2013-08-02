@@ -42,7 +42,7 @@ angular.module('inventoryApp').factory("productFactory", ['$http', function($htt
 					  			"img/productos/product5.jpg",
 					  			""
 					  		],
-					  		"name": "Piqueos"
+					  		"name": "Jugos"
 					  	},
 					  	{
 					  		"id":6,
@@ -50,7 +50,7 @@ angular.module('inventoryApp').factory("productFactory", ['$http', function($htt
 					  			"img/productos/product6.jpg",
 					  			""
 					  		],
-					  		"name": "Piqueos"
+					  		"name": "Reloj"
 					  	},
 					  	{
 					  		"id":7,
@@ -58,7 +58,7 @@ angular.module('inventoryApp').factory("productFactory", ['$http', function($htt
 					  			"img/productos/product7.jpg",
 					  			""
 					  		],
-					  		"name": "Piqueos"	
+					  		"name": "Medicina"	
 					  	}
 		  			];
 		return data;

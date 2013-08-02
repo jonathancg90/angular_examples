@@ -1,26 +1,47 @@
 
 <script type="text/ng-template" id='progressAlmacen.html'>
-    <div class="progress">
+    <div class="progress" >
             <div class="bar bar-success"></div><!--90%-->
             <div class="bar bar-warning"></div><!--7%-->
             <div class="bar bar-danger" ></div><!--3%-->
     </div>
+    <span class="progress-percentage last">0%</span>
 </script>
 
 
 <div class="container-fluid">
   <div class="row-fluid">
     <div class="span3" id="catalog" droppable>
-    	<h4>Productos:</h4>
+        <div id="seach-product">
+        	<span class="text-info">Productos:</span>
+            <div class="input-append">
+                <input type="text" class="search-query span2" placeholder="Search" ng-model="query">
+            </div>
+        </div>
     	<hr>
       <div class='productos'>
-        <img  class='product-catalog' src="{{ producto.images.0 }}" ng-repeat="producto in productos" data-index="{{$index}}" data-reject="{{ producto.reject }}"   draggable/>
+        <img  class='product-catalog' src="{{ producto.images.0 }}" ng-repeat="producto in productos | filter:query " data-index="{{$index}}" data-reject="{{ producto.reject }}" title="{{ producto.name}}"   draggable/>
       <!--Sidebar content-->
       </div>
     </div>
     <div class="span9" id="shelf">
      	<div class="span3">
-     		<h4>Almacen</h4>
+            <div id="seach-product">
+         		<span class="text-info">Almacen</span>
+                <span class="label label-large label-info">Info</span>
+
+                <div class="tooltip fade bottom in tooltip-light" style="display: block;">
+                    <div class="tooltip-arrow">
+                    </div>
+                    <div class="tooltip-inner" style="text-align: left;">
+                    <ul>
+                        <li>Capacidad: 100 kg</li>
+                        <li>Ubicacion: Av. Larco 356</li>
+                        <li>Estado: Activo</li>
+                    </ul>
+                    </div>
+                </div>
+            </div>
      	</div>
      	<div class="span9">
         <progress-almacen></progress-almacen>
@@ -29,6 +50,8 @@
           <hr>
             <img class="product-almacen" src="{{ producto.images.0 }}" ng-repeat="producto in almacen" data-index="{{ $index }}" data-reject="{{ producto.reject }}"  class="ng-cloak" draggable/>
         </div>
+            <a href="#fakelink" class="btn btn-large btn-inverse" >Edit</a>
+            <a href="#fakelink" class="btn btn-large btn-success" >Save</a>
      	</diV>
     </div>
 </div>
