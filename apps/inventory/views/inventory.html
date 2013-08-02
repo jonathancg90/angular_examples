@@ -28,9 +28,9 @@
      	<div class="span3">
             <div id="seach-product">
          		<span class="text-info">Almacen</span>
-                <span class="label label-large label-info">Info</span>
+                <span class="label label-large label-info" ng-mouseenter="more = 1" ng-mouseleave="more = 0" ng-init="more=0">Info</span>
 
-                <div class="tooltip fade bottom in tooltip-light" style="display: block;">
+                <div class="tooltip fade bottom in tooltip-light" style="display: block;" ng-show="more">
                     <div class="tooltip-arrow">
                     </div>
                     <div class="tooltip-inner" style="text-align: left;">
@@ -46,7 +46,7 @@
      	<div class="span9">
         <progress-almacen></progress-almacen>
      	</div>
-        <div class='almacen shelf-container' droppable style="border:solid; border-color:black;">
+        <div class='almacen shelf-container' droppable style="border: 1px solid #aaaaaa;">
           <hr>
             <img class="product-almacen" src="{{ producto.images.0 }}" ng-repeat="producto in almacen" data-index="{{ $index }}" data-reject="{{ producto.reject }}"  class="ng-cloak" draggable/>
         </div>
