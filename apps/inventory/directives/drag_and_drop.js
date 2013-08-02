@@ -29,12 +29,14 @@ inventoryApp.directive('droppable', function($compile) {
           if (dragEl.hasClass('productos') && !dropEl.hasClass('productos') && reject !== true) {
             scope.almacen.push(scope.productos[dragIndex]);
             scope.productos.splice(dragIndex, 1);
-            scope.get_capacity(scope.almacen.length);
+            //scope.get_capacity(scope.almacen.length);
+            scope.updateProgress($('progress-almacen'));
             //alert('ingreso al almacen');
           } else if (dragEl.hasClass('almacen') && !dropEl.hasClass('almacen') && reject !== true) {
             scope.productos.push(scope.almacen[dragIndex]);
             scope.almacen.splice(dragIndex, 1);
-            scope.get_capacity(scope.almacen.length);
+            scope.updateProgress($('progress-almacen'));
+            //scope.get_capacity(scope.almacen.length);
             //alert('ingreso al inventario');
           }
           scope.$apply();
