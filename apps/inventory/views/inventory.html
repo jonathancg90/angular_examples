@@ -1,10 +1,20 @@
+
+<script type="text/ng-template" id='progressAlmacen.html'>
+    <div class="progress">
+            <div class="bar bar-success" style="width: {{ capacity_green }}%;"></div><!--80%-->
+            <div class="bar bar-warning" style="width: {{ capacity_yellow }}%;"></div><!--15%-->
+            <div class="bar bar-danger"  style="width: {{ capacity_red }}%;"></div><!--5%-->
+    </div>
+</script>
+
+
 <div class="container-fluid">
   <div class="row-fluid">
     <div class="span3" id="catalog" droppable>
     	<h4>Productos:</h4>
     	<hr>
       <div class='productos'>
-        <img  class='product-catalog' src="{{producto.url}}" ng-repeat="producto in productos" data-index="{{$index}}" data-reject="{{producto.reject}}"   draggable/>
+        <img  class='product-catalog' src="{{ producto.images.0 }}" ng-repeat="producto in productos" data-index="{{$index}}" data-reject="{{ producto.reject }}"   draggable/>
       <!--Sidebar content-->
       </div>
     </div>
@@ -17,15 +27,8 @@
      	</div>
         <div class='almacen shelf-container' droppable style="border:solid; border-color:black;">
           <hr>
-            <img class="product-almacen" src="{{ producto.url }}" ng-repeat="producto in almacen" data-index="{{ $index }}" data-reject="{{ producto.reject }}"   draggable/>
+            <img class="product-almacen" src="{{ producto.images.0 }}" ng-repeat="producto in almacen" data-index="{{ $index }}" data-reject="{{ producto.reject }}"  class="ng-cloak" draggable/>
         </div>
      	</diV>
     </div>
 </div>
-<script type="text/ng-template" id='progressAlmacen.html'>
-    <div class="progress">
-        <div class="bar bar-success" style="width: {{ capacity_green }}%;"></div><!--80%-->
-        <div class="bar bar-warning" style="width: {{ capacity_yellow }}%;"></div><!--15%-->
-        <div class="bar bar-danger"  style="width: {{ capacity_red }}%;"></div><!--5%-->
-    </div>
-</script>

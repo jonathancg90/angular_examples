@@ -10,6 +10,9 @@
 
     <link rel="shortcut icon" href="../../libs/flat-ui/images/favicon.ico">
     <style type="text/css">
+        [ng\:cloak], [ng-cloak], .ng-cloak {
+           display: none !important;
+       }
 
     	#Catalog {
     		border-color: black;
@@ -41,7 +44,7 @@
 
     </style>
 </head>
-<body ng-cloak>
+<body class="ng-cloak">
     <div class="navbar">
         <div class="navbar-inner">
             <div class="container">
@@ -66,6 +69,7 @@
   <script src="../../libs/angular.js"></script>
   <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1/jquery-ui.min.js"></script>
   <script src="app.js"></script>
+  <script src="factories/productFactory.js"></script>
   <script src="controllers/InventoryController.js"></script>
   <script src="directives/drag_and_drop.js"></script>
   <script src="directives/progress_bar.js"></script>
