@@ -9,12 +9,35 @@ inventoryApp.config(function($routeProvider){
 				templateUrl : 'views/inventory.html'
 			})
 		.when(
+			'/client',
+			{
+				controller: 'ClientController',
+				templateUrl: 'views/client.html'
+			})
+		.when(
+			'/order',
+			{
+				controller: 'OrderController',
+				templateUrl: 'views/order.html'
+			})
+		.when(
+			'/report',
+			{
+				controller: 'ReportController',
+				templateUrl: 'views/report.html'
+			})
+		.when(
+			'/solicitude',
+			{
+				controller: 'SolicitudeController',
+				templateUrl: 'views/solicitude.html'
+			})
+		.when(
 			'/supplier',
 			{
 				controller: 'SupplierController',
 				templateUrl: 'views/supplier.html'
-			}
-			)
+			})
 		.when(
 			'/',
 			{

@@ -1,0 +1,99 @@
+/* Inventory */
+      [ng\:cloak], [ng-cloak], .ng-cloak 
+      {
+           display: none !important;
+      }
+
+    	#Catalog 
+      {
+    		border: 1px solid #aaaaaa;
+        min-height:500px;
+        border-style: dotted; 
+    	}
+
+    	.progress 
+      {
+    		margin: 15px 0 10px 0;
+    	}
+      .progress-percentage
+      {
+        float: right;
+      }
+    	.shelf-container
+      {
+    		margin-top: 60px;
+        min-height: 200px;
+    	}
+      .product-almacen
+      {
+        margin: 10px 20px 10px 20px;
+        border-radius: 20px;
+        box-shadow: 0px 0px 15px #000; /* Sombra */
+      }
+      .product-catalog 
+      {
+        border: 1px solid #aaaaaa; 
+        width: 115px;
+        height: 115px;
+        margin: 5px 10px 5px 10px;
+      }
+      .text-info
+      {
+        font-size: 20px;
+      }
+      #seach-product 
+      {
+        margin: 10px 0 0 7px;
+      }
+/* supplier */
+
+
+/* solicitude */
+  .view-image {
+    border-radius: 10px;
+    background-color: #394264;
+    width: 170px; 
+    height: 200px;
+    border: solid;
+    margin: 10px 10px 10px 10px;
+  }
+  .title-image{
+    color:white;
+    font:bold 12px "Trebuchet MS"; 
+  }
+
+  .border-image {
+    width: 165px; 
+    text-align: center;
+    margin: 0 0 0 0;
+  }
+  .border-image img{
+    border: solid;
+    border-color: #515A7C;
+    margin: 5px;
+    width: 110px; 
+    height: 110px;
+  }
+  .border-options{
+    background-color: #50597B;
+  }
+  .border-options div{
+    background-color: #50597B;
+    color:white;
+    width: 55px;
+    float: left;
+    height: 55px;
+  }
+  .option1 {
+    border-radius: 0 0 0 10px;
+    border-top: solid 3px #FFFFFF;
+  }
+  .option2 {
+    border-top: solid 3px #0BB2B1;
+    border-right: solid 1px;
+    border-left: solid 1px;
+  }
+  .option3{
+    border-top: solid 3px #FFBC4C;
+    border-radius: 0 0 10px 0;
+  }
