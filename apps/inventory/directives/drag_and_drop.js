@@ -22,13 +22,18 @@ inventoryApp.directive('droppable', function($compile) {
       //This makes an element Droppable
       element.droppable({
         drop:function(event,ui) {
-          var dragIndex = angular.element(ui.draggable).data('index'),
+          /*var dragIndex = angular.element(ui.draggable).data('index'),*/
+          var dragIndex = parseInt(angular.element(ui.draggable).attr('data-index')),
+          //var product = angular.element(ui.draggable).attr('data-index'),
               reject = angular.element(ui.draggable).data('reject'),
               dragEl = angular.element(ui.draggable).parent(),
               dropEl = angular.element(this);
+
           if (dragEl.hasClass('productos') && !dropEl.hasClass('productos') && reject !== true) {
-            scope.almacen.push(scope.productos[dragIndex]);
-            scope.productos.splice(dragIndex, 1);
+            var product = scope.productoById(dragIndex)
+            scope.almacen.push(product);
+            debugger;
+            scope.productDelete(product);
             //scope.get_capacity(scope.almacen.length);
             scope.updateProgress($('progress-almacen'));
             //alert('ingreso al almacen');

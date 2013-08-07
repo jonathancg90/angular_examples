@@ -1,0 +1,2 @@
+function SupplierController($scope){
+};

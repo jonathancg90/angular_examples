@@ -1,0 +1,122 @@
+<div class="row">
+  <div class="span2">
+	<div class="iconbar">
+            <ul>
+              <li class="active" ><a href="#/supplier?op=1" class="fui-user sub-menu" title="Listado"></a></li>
+              <li><a  href="#/supplier?op=2" class="fui-calendar sub-menu" title="Pedidos"></a></li>
+              <li><a  href="#fakelink" class="fui-chat sub-menu" title="Messages"></a></li>
+              <li><a href="#fakelink" class="fui-mail sub-menu" title="Configuracion" ></a></li>
+              <li>
+                <a href="#fakelink" class="fui-gear">
+                  <span class="iconbar-unread">1</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+  </div>
+  <div class="span8">
+  	<div id="new-supplier" style="display:none;">
+	  	<span class="text-info">Nuevo proveedor</span>
+	  	<hr>
+		<form class="form-horizontal">
+		  <div class="control-group">
+		    <label class="control-label" for="inputEmail">Razon Social</label>
+		    <div class="controls">
+		      <input type="text" id="inputrazon" placeholder="Razon Social">
+		    </div>
+		  </div>
+		  <div class="control-group">
+		    <label class="control-label" for="inputEmail">Email</label>
+		    <div class="controls">
+		      <input type="text" id="inputrazon" placeholder="Email">
+		    </div>
+		  </div>
+		  <div class="control-group">
+		    <label class="control-label" for="inputEmail">Direccion</label>
+		    <div class="controls">
+		      <input type="text" id="inputrazon" placeholder="Direccion">
+		    </div>
+		  </div>
+		  <div class="control-group">
+		    <label class="control-label" for="inputEmail">Ruc</label>
+		    <div class="controls">
+		      <input type="text" id="inputrazon" placeholder="Ruc">
+		    </div>
+		  </div>
+		  <div class="control-group">
+		    <label class="control-label" for="inputEmail">Telefono</label>
+		    <div class="controls">
+		      <input type="text" id="inputrazon" placeholder="Telefono">
+		    </div>
+		  </div>
+		 <div class="control-group">
+		    <label class="control-label" for="inputEmail">Contacto</label>
+		    <div class="controls">
+		      <input type="text" id="inputrazon" placeholder="Contacto">
+		    </div>
+		  </div>
+		  <div class="control-group">
+		    <div class="controls">
+		      <button type="submit" class="btn">Registrar</button>
+		      or
+		      <a href="#/supplier?op=1"  class="btn sub-menu">Cancelar</a>
+		    </div>
+		  </div>
+		</form>
+	</div>
+
+	<div id="list-suppliers">
+		<span class="text-info">Nuestros proveedores</span>
+		<span style="float:right;"> <a href="#/supplier?op=2" class="btn btn-primary sub-menu">Nuevo</a></span>
+		<hr>
+		<div class="demo-row">
+			<form class="form-search">
+            <div class="input-append">
+              <input type="text" class="span2 search-query" placeholder="Search" id="search-query-1" style="height: 40px;">
+              <button type="submit" class="btn"><span class="fui-search"></span></button>
+            </div>
+          </form>
+        <div class="demo-content-wide">
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th>N°</th>
+                <th>Nombre</th>
+                <th>Email</th>
+                <th>Telefono</th>
+                <th>Comtacto</th>
+                <th>Opciones</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>The Shawshank Redemption</td>
+                <td>Crime, Drama</td>
+                <td>923,629</td>
+                <td>1994</td>
+                <td>
+                	<i class="icon-edit"></i> Editar | 
+                	<i class="icon-remove"></i> Eliminar
+                </td>
+              </tr>
+              <tr class="selected-row">
+                <td>2</td>
+                <td>The Godfather</td>
+                <td>Crime, Drama</td>
+                <td>663,133</td>
+                <td>1972</td>
+                <td>
+                	<i class="icon-edit"></i> Editar | 
+                	<i class="icon-remove"></i> Eliminar
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div> <!-- /tables -->
+      </div>
+	</div>
+
+
+  </div>
+</div>

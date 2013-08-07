@@ -11,7 +11,7 @@
 
 <div class="container-fluid">
   <div class="row-fluid">
-    <div class="span3" id="catalog" droppable>
+    <div class="span3 productos" id="catalog" droppable>
         <div id="seach-product">
         	<span class="text-info">Productos:</span>
             <div class="input-append">
@@ -19,10 +19,36 @@
             </div>
         </div>
     	<hr>
-      <div class='productos'>
-        <img  class='product-catalog' src="{{ producto.images.0 }}" ng-repeat="producto in productos | filter:query " data-index="{{$index}}" data-reject="{{ producto.reject }}" title="{{ producto.name}}"   draggable/>
+        <img  class='product-catalog productos' src="{{ producto.images.0 }}" ng-repeat="producto in productos | filter:query " data-index="{{ producto.id }}" data-reject="{{ producto.reject }}" title="{{ producto.name }}"   draggable/>
       <!--Sidebar content-->
-      </div>
+    </div>
+        <div class="span3" style="display:none;">
+        <span class="text-info">Edicion del producto</span>
+        <hr>
+        <form name="myForm">
+          <div class="control-group">
+            <label>Nombre</label>
+            <input type="text" name="name"required>
+          </div>
+         
+          <div class="control-group">
+            <label>Categoria</label>
+            <select>
+                <option> ---------- </option>
+                <option>Licores</option>
+                <option>Chocolates</option>
+                <option>Embutidos</option>
+            </select>
+          </div>
+         
+          <label>Descipcion</label>
+          <textarea name="description"></textarea>
+         
+          <br>
+          <a href="#/" class="btn">Cancel</a>
+          <button ng-click="save()" class="btn btn-primary">Save</button>
+          <button ng-click="destroy()" class="btn btn-danger">Delete</button>
+        </form>
     </div>
     <div class="span9" id="shelf">
      	<div class="span3">
@@ -49,8 +75,9 @@
         <div class='almacen shelf-container' droppable style="border: 1px solid #aaaaaa;">
           <hr>
             <img class="product-almacen" src="{{ producto.images.0 }}" ng-repeat="producto in almacen" data-index="{{ $index }}" data-reject="{{ producto.reject }}"  class="ng-cloak" draggable/>
+            <img class="" src="img/web/drag.png">
         </div>
-            <a href="#fakelink" class="btn btn-large btn-inverse" >Edit</a>
+            <a href="#fakelink" ng-click="" class="btn btn-large btn-inverse" >Edit</a>
             <a href="#fakelink" class="btn btn-large btn-success" >Save</a>
      	</diV>
     </div>

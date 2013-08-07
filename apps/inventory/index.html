@@ -60,7 +60,7 @@
                 <div class="nav-collapse collapse" id="nav-collapse-01">
                   <ul class="nav">
                     <li class="active"><a href="#fakelink">Productos</a></li>
-                    <li><a href="#fakelink">Proveedores</a></li>
+                    <li><a href="#/supplier">Proveedores</a></li>
                     <li><a href="#fakelink">Clientes</a></li>
                     <li><a href="#fakelink">Ordenes</a></li>
                     <li><a href="#fakelink">Pedidos</a></li>
@@ -94,7 +94,29 @@
   <script src="factories/almacenFactory.js"></script>
   <script src="factories/productFactory.js"></script>
   <script src="controllers/InventoryController.js"></script>
+  <script src="controllers/SupplierController.js"></script>
   <script src="directives/drag_and_drop.js"></script>
   <script src="directives/progress_bar.js"></script>
+
+  <script type="text/javascript">
+    $(document).on('ready', function(){
+      $('.sub-menu').live('click', function(e){
+        e.preventDefault();
+        op = this.href.substr(-1);
+        switch(op)
+        {
+          case '1':
+            $('#new-supplier').attr('style','display:none');
+            $('#list-suppliers').attr('style','display:block');
+            break;
+          case '2':
+            $('#new-supplier').attr('style','display:block');
+            $('#list-suppliers').attr('style','display:none');
+            break;
+        }
+      });
+    });
+  </script>
+
 </body>
 </html>
