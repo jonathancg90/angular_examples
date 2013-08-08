@@ -97,3 +97,15 @@
     border-top: solid 3px #FFBC4C;
     border-radius: 0 0 10px 0;
   }
+  .search-supplier{
+    margin-top: 15px;
+    margin-bottom: 0;
+    margin-left: 10px;
+  }
+  .pagination-supplier{
+    text-align: center;
+  }
+  .info-solicitude{
+    text-align: center;
+    height: 300px;
+  }
