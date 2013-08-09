@@ -53,16 +53,16 @@
 	  <div class="span3 info-solicitude" style="border:solid;">
 	  		<div class="btn-toolbar">
                 <div class="btn-group">
-                  <a class="btn btn-info active" href="#" tab-click ngModel="tab1" ng-model="tab1"><i class="fui-time"></i></a>
-                  <a class="btn btn-info" href="#" tab-click  ng-model="tab2"><i class="fui-photo"></i></a>
-                  <a class="btn btn-info" href="#" tab-click  ng-model="tab3"><i class="fui-heart"></i></a>
-                  <a class="btn btn-info" href="#" tab-click  ng-model="tab4"><i class="fui-eye"></i></a>
+                  <a class="btn btn-info" href="#" id="tab1" tab-click><i class="fui-time"></i></a>
+                  <a class="btn btn-info" href="#" id="tab2" tab-click><i class="fui-photo"></i></a>
+                  <a class="btn btn-info" href="#" id="tab3" tab-click><i class="fui-heart"></i></a>
+                  <a class="btn btn-info" href="#" id="tab4" tab-click><i class="fui-eye"></i></a>
                 </div>
             </div>
           <div class="tabs">
-   			    <div class="thumbnail" id="time-supplier" style="border:solid;" ng-show="tab1">
+   			    <div class="thumbnail select-tabs" id="time-supplier" style="display:none;" tab-activate="tab1">
                   <div class="caption">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                      Lorem ipsum 1 dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                       quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                       consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
@@ -70,9 +70,9 @@
                       proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                   </div>
              </div>
-             <div class="thumbnail" id="photo-supplier" style="border:solid;" ng-show="tab2">
+             <div class="thumbnail select-tabs" id="photo-supplier" style="display:none;" tab-activate="tab2">
                   <div class="caption">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                      Lorem ipsum 2 dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                       quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                       consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
@@ -80,9 +80,9 @@
                       proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                   </div>
              </div>
-             <div class="thumbnail" id="rewies-supplier" style="border:solid;" ng-show="tab3">
+             <div class="thumbnail select-tabs" id="rewies-supplier" style="display:none;" tab-activate="tab3">
                   <div class="caption">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                      Lorem ipsum 3 dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                       quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                       consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse

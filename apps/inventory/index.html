@@ -61,27 +61,5 @@
   <script src="directives/drag_and_drop.js"></script>
   <script src="directives/progress_bar.js"></script>
   <script src="directives/tab_click.js"></script>
-
-<!--Only supplier -->
-  <script type="text/javascript">
-    $(document).on('ready', function(){
-      $('.sub-menu').live('click', function(e){
-        e.preventDefault();
-        op = this.href.substr(-1);
-        switch(op)
-        {
-          case '1':
-            $('#new-supplier').attr('style','display:none');
-            $('#list-suppliers').attr('style','display:block');
-            break;
-          case '2':
-            $('#new-supplier').attr('style','display:block');
-            $('#list-suppliers').attr('style','display:none');
-            break;
-        }
-      });
-    });
-  </script>
-
 </body>
 </html>

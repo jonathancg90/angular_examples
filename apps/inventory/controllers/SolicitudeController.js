@@ -1,3 +1,2 @@
 function SolicitudeController($scope){
-
 }

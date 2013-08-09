@@ -1,27 +1,18 @@
 inventoryApp.directive('tabClick', function() {
     return {
     restrict: 'A',
-    scope: {
-      ngModel: '='
-    },
     link: function(scope, element, attrs) {
     	element.bind('click', function(event) {
     		event.preventDefault();
-    		debugger;
-    		// Watching for categories in order to add google images to each one.
-            scope.$watch(attrs.ngModel, function(ngModel) {
-                if (ngModel)
-                    scope.updateAttribute(categories, 'updateImage');
-            });
-
-            var active = attrs.ngModel;
-            scope.tab1 = 1;
-            var tabs = $('.tabs div');
+            var active = attrs.id;
+            var tabs = $('.tabs div.select-tabs');
             $.each(tabs, function(index, value) {
-            	if($(value).attr('show-tab') == active){
-            		$(value).attr('ng-show',1);
+            	if($(value).attr('tab-activate') == active){
+            		$(value).attr('style','display:block');
+                    $('#'+active).addClass('active');
             	} else {
-            		$(value).attr('ng-show',0);
+            		$(value).attr('style','display:none');
+                    $('#'+$(value).attr('tab-activate')).removeClass('active');
             	}
             });
         });
